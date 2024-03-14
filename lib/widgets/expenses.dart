@@ -35,6 +35,7 @@ class _ExpensesState extends State<Expenses> {
       builder: (ctx) => NewExpense(
         onAddExpense: _addExpense,
       ),
+      constraints: const BoxConstraints(maxWidth: double.infinity),
     );
   }
 
